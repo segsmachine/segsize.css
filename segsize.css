@@ -1,1 +1,241 @@
-
+/*
+  segsize.css
+  Author: @segsmachine (Sheryce E.)
+  Version: 2023.1.0-alpha
+  License: MIT
+*/
+/* ------------------------------- Document -------------------------------  */
+/* Sets the default font family to system-ui, -apple-system, BlinkMacSystemFont,
+  "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol" in all browsers */
+body {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+		Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+		"Segoe UI Emoji", "Segoe UI Symbol";
+}
+/* Add the CSS box-sizing property with a value of border-box to all elements.
+  This ensures that padding and border are included in the element's total width
+  and height, making it easier to calculate layouts and alignments */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+/* ------------------------------- Sections ------------------------------- */
+/* Remove the default margin for the body element in all browsers */
+body {
+	margin: 0;
+}
+/* Remove the default margin and padding for the blockquote element in all browsers */
+blockquote {
+	margin: 0;
+	padding: 0;
+}
+/* Remove the default margin for the dd and dt elements in all browsers */
+dd,
+dt {
+	margin: 0;
+}
+/* ------------------------------- Content Grouping ------------------------------- */
+/* Remove the default margin and padding for the ul and ol elements in all browsers */
+ul,
+ol {
+	margin: 0;
+	padding: 0;
+}
+/* Remove the default margin and padding for the pre element in all browsers */
+pre {
+	margin: 0;
+	padding: 0;
+}
+/* ------------------------------- Typography ------------------------------- */
+/* Remove the default margin for the h1, h2, h3, h4, h5, and h6 elements in all browsers */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+/* ------------------------------- Inputs and Fields ------------------------------- */
+/* Remove the default margin and padding for the fieldset element in all browsers */
+fieldset {
+	margin: 0;
+	padding: 0;
+}
+/* Remove the default padding for the legend element in all browsers */
+legend {
+	padding: 0;
+}
+/* Remove the default padding and border for the input, select, and textarea 
+elements in all browsers. */
+input,
+select,
+textarea {
+	padding: 0;
+	border: 0;
+}
+/* Set the default font family for the select element to inherit in all browsers. */
+select {
+	font-family: inherit;
+}
+/* Remove the default vertical alignment for the progress element in all browsers. */
+progress {
+	vertical-align: baseline;
+}
+/* Remove the default appearance of the button element in all browsers. */
+button {
+	appearance: none;
+	-webkit-appearance: none;
+}
+/* Set the default background color and text color for the placeholder 
+text in all browsers. */
+::placeholder {
+	color: #a9a9a9;
+	background-color: transparent;
+}
+/* Remove the default box shadow for invalid form elements in all browsers. */
+:invalid {
+	box-shadow: none;
+}
+/* Disable pointer events for disabled form elements in all browsers. */
+[disabled] {
+	pointer-events: none;
+}
+/* ------------------------------- Media ------------------------------- */
+/* Set the max-width of images, audio, and video elements to 
+  100% in all browsers. */
+img,
+audio,
+video {
+	max-width: 100%;
+	height: auto;
+}
+/* Adds box-sizing property to all elements */
+ {
+	box-sizing: border-box;
+}
+/* Adds cursor:pointer to links with 'href' attribute */
+a[href]:not([disabled]) {
+	cursor: pointer;
+}
+/* Standardizes font-smoothing for better readability */
+html {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+/* Adds focus styles for keyboard accessibility */
+:focus:not(:focus-visible) {
+	outline: none;
+}
+/* Fixes issue with flexbox on IE 10 and 11 */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.flex {
+		display: -ms-flexbox;
+	}
+	.flex-grow {
+		-ms-flex-positive: 1;
+	}
+	.flex-row {
+		-ms-flex-direction: row;
+	}
+	.flex-column {
+		-ms-flex-direction: column;
+	}
+	.flex-wrap {
+		-ms-flex-wrap: wrap;
+	}
+	.justify-content-center {
+		-ms-flex-pack: center;
+		justify-content: center;
+	}
+	.align-items-center {
+		-ms-flex-align: center;
+		align-items: center;
+	}
+}
+/* Standardizes background color for page */
+body {
+	background-color: #fff;
+}
+/* Standardizes font family and size for page */
+body,
+input,
+textarea,
+button,
+select {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+}
+/* Removes default margins and paddings */
+blockquote,
+body,
+dd,
+dl,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+fieldset,
+ol,
+p,
+pre,
+ul {
+	margin: 0;
+	padding: 0;
+}
+/* Removes default padding and adds box-sizing property to form elements */
+button,
+input,
+optgroup,
+select,
+textarea {
+	padding: 0;
+	border-radius: 0;
+}
+/* Standardizes list styles */
+ol,
+ul {
+	list-style: none;
+}
+/* Adds default styling for table elements */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Standardizes link color and removes underline */
+a {
+	color: inherit;
+	text-decoration: none;
+}
+/* Standardizes button and input styles */
+button,
+input {
+	background: none;
+	border: none;
+	cursor: pointer;
+	font-size: inherit;
+	line-height: inherit;
+	text-align: inherit;
+}
+/* Removes outline for elements with blue highlight */
+input:focus,
+textarea:focus,
+select:focus {
+	outline: none;
+}
+/* Adds default styling for disabled elements */
+[disabled] {
+	opacity: 0.5;
+	cursor: not-allowed;
+}
+/* Adds default styling for images and media */
+img,
+audio,
+video {
+	max-width: 100%;
+	height: auto;
+}

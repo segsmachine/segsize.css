@@ -25,6 +25,15 @@ body {
 	box-sizing: border-box;
 }
 
+/* Correct the line height in all browsers.Then prevents adjustments of
+font size after orientation changes in iOS   
+Credit: normalize.css by @necolas
+*/
+* {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
 /* ------------------------------- Sections ------------------------------- */
 
 /* Remove the default margin for the body element in all browsers */
@@ -69,6 +78,32 @@ h4,
 h5,
 h6 {
 	margin: 0;
+}
+
+
+/* Set Heading Sizes */
+h1 {
+	font-size: 2.5em;
+}
+
+h2 {
+	font-size: 1.75em;
+}
+
+h3 {
+	font-size: 1.5em;
+}
+
+h4 {
+	font-size: 1.25em;
+}
+
+h5 {
+	font-size: 1.08em;
+}
+
+h6 {
+	font-size: 0.92em;
 }
 
 /* ------------------------------- Inputs and Fields ------------------------------- */
@@ -135,11 +170,6 @@ audio,
 video {
 	max-width: 100%;
 	height: auto;
-}
-
-/* Adds box-sizing property to all elements */
- {
-	box-sizing: border-box;
 }
 
 /* Adds cursor:pointer to links with 'href' attribute */
